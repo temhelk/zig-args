@@ -28,7 +28,7 @@ pub const ArgumentInfo = struct {
     /// The short name of an argument made out of 1 ascii character,
     /// can be set like that:
     ///   -{short} for a boolean argument (a flag)
-    ///   -{short}=Hello or -{short} Hello or -{short}Hello for a string argument
+    ///   -{short} Hello or -{short}Hello for a string argument
     /// In a case of multiple flags these are equivalent:
     ///   -xvf === -x -v -f
     short: ?u8 = null,
