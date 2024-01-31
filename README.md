@@ -1,6 +1,9 @@
 # About
 A pretty simple zig argument parser that uses compile-time stuff
 
+Compiles with the latest zig version from the master branch
+
+# Arguments syntax
 Examples of argument passing syntax can be found tests in main.zig, here's a quick overview:
 
 - `-ab` or `-a -b` for short boolean arguments
@@ -12,7 +15,12 @@ Examples of argument passing syntax can be found tests in main.zig, here's a qui
 - `hello --first=something world` for positional arguments will parse as `{"hello", "world"}`
 
 # Usage example
+To use just import the 'parser.zig' file and follow the example below
+
 ```zig
+const std = @import("std");
+const args_parser = @import("parser.zig");
+
 const ArgsParserExample = args_parser.ArgsParser(
     &[_] args_parser.ArgumentInfo {
         .{ .field_name = "speed", .long = "speed", .short = 's', .argument_type = .bool },
