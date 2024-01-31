@@ -88,7 +88,7 @@ pub fn ArgsParser(comptime config_arguments: []const ArgumentInfo) type {
         /// An array containing all position arguments
         positional_args: [][]const u8,
 
-        /// Parses arguments and returs a struct containing them.
+        /// Parses arguments and returns a struct containing them.
         /// The values of strings and such are views into the args array
         /// so they should not be altered or freed before arguments are no longer used.
         /// The allocator is used to store an array of positional arguments, and it is
