@@ -4,7 +4,7 @@ A pretty simple zig argument parser that uses compile-time stuff
 Compiles with the latest zig version from the master branch
 
 # Arguments syntax
-Examples of argument passing syntax can be found tests in main.zig, here's a quick overview:
+Examples of argument passing syntax can be found in tests in main.zig, here's a quick overview:
 
 - `-ab` or `-a -b` for short boolean arguments
 - `--first --second` for long boolean arguments
